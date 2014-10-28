@@ -22,7 +22,7 @@ app.get('/', function(req, res){
 	res.render('home');
 });
 app.get('/about', function(req, res){
-	res.render('about', { fortune: randomFortune });
+	res.render('about');
 });
 
 // custom 404 page (middleware)
