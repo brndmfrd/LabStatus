@@ -1,8 +1,8 @@
 //project entry point
 
 var express = require('express');
-
 var app = express();
+
 
 
 // set up handlebars view engine
@@ -13,8 +13,12 @@ app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3000);
 
+
+
 // static middleware
 app.use(express.static(__dirname + '/public'));
+
+
 
 // Our routes.  Order matters here.  Our 404 handler must be below our routs.
 // note: wildcards are OK for routes, but can goof-up ordering.
@@ -38,6 +42,8 @@ app.use(function(er, req, res, next){
 	res.status(500);
 	res.render('500');
 });
+
+
 
 app.listen(app.get('port'), function(){
   console.log( 'Express started on http://localhost:' +
