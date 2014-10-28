@@ -26,7 +26,7 @@ app.get('/', function(req, res){
 	res.render('home');
 });
 app.get('/about', function(req, res){
-	var demonstration = "Hey Hey!"
+	var demonstration = "Hey Hey!";
 	res.render('about', {aboutDemo: demonstration});
 });
 
