@@ -2,21 +2,29 @@
 
 var express = require('express');
 var app = express();
-
+var static = require('./lib/static.js').map;
 
 
 // set up handlebars view engine
-var handlebars = require('express-handlebars')
-	.create({ defaultLayout:'main' });
+var handlebars = require('express-handlebars').create({ 
+	defaultLayout:'main',
+	helpers: {
+		static: function(name) {
+			return require('./lib/static.js').map(name);
+		}
+	}
+});
+
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-
 app.set('port', process.env.PORT || 3000);
+
 
 
 
 // static middleware
 app.use(express.static(__dirname + '/public'));
+
 
 
 
@@ -30,6 +38,7 @@ app.get('/about', function(req, res){
 	res.render('about', {aboutDemo: demonstration});
 });
 
+
 // custom 404 page (middleware)
 app.use(function(req, res, next){
 	res.status(404);
@@ -42,6 +51,9 @@ app.use(function(er, req, res, next){
 	res.status(500);
 	res.render('500');
 });
+
+
+
 
 
 
