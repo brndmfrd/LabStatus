@@ -1,0 +1,72 @@
+<!doctype html>
+<html ng-app='app'>
+
+
+<head>
+    <title>Header Title</title>
+    <link rel="stylesheet" href='/app.css'>
+    <link rel="stylesheet" href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+
+
+
+<body>
+<div class="helmet">
+    <div class="head">
+        <font color="white">Lab Status</font>
+    </div>
+</div>
+
+
+
+<!-- Primary body section -->
+<div class="block">
+Main body block
+<div ng-controller='PostsCtrl' class='container'>
+    <h1>Recent Posts</h1>
+    <form roll='form'>
+        <div class='form-group'>
+        <div class='input-group'>
+            <input ng-model="postBody" class='form-control'>
+            <span class='input-group-btn'>
+            <buton ng-click='addPost()' class='btn btn-default'>Add Post</button>
+            </span>
+        </div>
+        </div>
+    </form>
+
+    <ul class='list-group'>
+        <li ng-repeat='post in posts' class='list-group-item'>
+            <strong>@{{ post.username }}</strong>
+            <span>{{ post.body }}</span>
+        </li>
+    </ul>
+</div>
+
+
+
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js'></script>
+<script src='/app.js'></script>
+
+
+
+</div><!-- end of main body -->
+
+
+
+
+<!-- Right side panel -->
+<div class="rightpane">
+    Right panel text
+</div>
+                                  
+
+
+
+<!---	<header><img src="/img/logo.jpg" alt="Logo" height="160" width="120"></header> -->
+<!--     -->
+</body>
+
+
+
+</html>
