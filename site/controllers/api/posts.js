@@ -14,10 +14,7 @@ router.get('/posts', function (req, res, next) {
 
 
 router.post('/posts', function (req, res, next) {
-  var post = new Post({
-    username: req.body.username,
-    body:     req.body.body,
-  })
+  var post = new Post({body: req.body.body })
   post.save(function (err, post) {
     if (err) { return next(err) }
     websockets.broadcast('new_post', post)

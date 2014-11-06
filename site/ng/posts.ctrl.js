@@ -3,7 +3,7 @@ angular.module('app')
   $scope.addPost = function () {
     if ($scope.postBody) {
       PostsSvc.create({
-        username: 'dickeyxxx',
+        username: 'user',
         body:     $scope.postBody
       })
       .success(function (post) {
@@ -12,6 +12,14 @@ angular.module('app')
       })
     }
   }
+
+
+  $scope.$on('ws:new_post', function (_, post) {
+    $scope.$apply(function () {
+      $scope.posts.unshift(post)
+    })
+  })
+
 
   PostsSvc.fetch()
   .success(function (posts) {

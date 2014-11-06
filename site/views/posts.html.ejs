@@ -29,7 +29,7 @@ Main body block
         <div class='input-group'>
             <input ng-model="postBody" class='form-control'>
             <span class='input-group-btn'>
-            <buton ng-click='addPost()' class='btn btn-default'>Add Post</button>
+            <button ng-click='addPost()' class='btn btn-default'>Add Post</button>
             </span>
         </div>
         </div>
@@ -37,7 +37,6 @@ Main body block
 
     <ul class='list-group'>
         <li ng-repeat='post in posts' class='list-group-item'>
-            <strong>@{{ post.username }}</strong>
             <span>{{ post.body }}</span>
         </li>
     </ul>
