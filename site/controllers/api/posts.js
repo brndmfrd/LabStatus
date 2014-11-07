@@ -17,6 +17,7 @@ router.post('/posts', function (req, res, next) {
   var post = new Post({body: req.body.body })
   post.save(function (err, post) {
     if (err) { return next(err) }
+    
     websockets.broadcast('new_post', post)
     res.status(201).json(post)
   })
