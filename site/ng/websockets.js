@@ -1,3 +1,6 @@
+DELETE THIS
+I DO NOT CARE ABOUT SENDING DIRECT WS CON TO THIS 
+
 angular.module('app')
 .run(function ($rootScope) {
   var url = 'ws://localhost:3000'
