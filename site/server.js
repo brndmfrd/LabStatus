@@ -32,7 +32,6 @@ app.post('/api/posts', function (req, res, next) {
     res.status(201).json(post) 
   });
   // node magic here
-  socket.emit('login', 'robert');
   socket.broadcast.emit('user joined', 'robert');  
 });
 
@@ -42,5 +41,12 @@ app.get('/api/posts', function(req, res, next){
     res.json(posts);
   });
 });
+
+app.get('/', function(req, res){
+  res.sendfile('/public/index.html')
+});
+
+
+
 
 });
