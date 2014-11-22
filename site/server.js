@@ -33,14 +33,15 @@ io.on('connection', function (socket) {
 var Post = require('./models/post')
 app.post('/api/posts', function (req, res, next) {
   var post = new Post({
-    body: req.body.body
+    stationNumber: req.body.stationNumber,
+    stationStatus: req.body.stationStatus
   });
   post.save(function(err, post) {
     if(err){return next(err)}
     res.status(201).json(post) 
   });
   // node magic here
-  socket.broadcast.emit('user joined', 'robert');  
+  // socket.broadcast.emit('user joined', 'robert');  
 });
 
 

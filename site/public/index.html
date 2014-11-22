@@ -19,8 +19,86 @@
       </li>
     </ul>
     
-    <div id="A00">hey</div>
 
+    <div id="A00">00</div>
+    <div id="A01">01</div>
+    <div id="A02">02</div>
+    <div id="A03">03</div>
+    <div id="A04">04</div>
+    <div id="A05">05</div>
+    <div id="A06">06</div>
+    <div id="A07">07</div>
+    <div id="A08">08</div>
+    <div id="A09">09</div>
+    <div id="A10">10</div>
+    <div id="A11">11</div>
+    <div id="A12">12</div>
+    <div id="A13">13</div>
+    <div id="A14">14</div>
+    <div id="A15">15</div>
+    <div id="A16">16</div>
+    <div id="A17">17</div>
+    <div id="A18">18</div>
+    <div id="A19">19</div>
+    <div id="A20">20</div>
+    <div id="A21">21</div>
+    <div id="A22">22</div>
+    <div id="A23">23</div>
+    <div id="A24">24</div>
+    <div id="A25">25</div>
+    <div id="A26">26</div>
+    <div id="A27">27</div>
+    <div id="A28">28</div>
+    <div id="A29">29</div>
+    <div id="A30">30</div>
+    <div id="A31">31</div>
+    <div id="A32">32</div>
+    <div id="A33">33</div>
+    <div id="A34">34</div>
+    <div id="A35">35</div>
+    <div id="A36">36</div>
+    <div id="A37">37</div>
+    <div id="A38">38</div>
+    <div id="A39">39</div>
+    <div id="A40">40</div>
+    <div id="A41">41</div>
+    <div id="A42">42</div>
+    <div id="A43">43</div>
+    <div id="A44">44</div>
+    <div id="A45">45</div>
+    <div id="A46">46</div>
+    <div id="A47">47</div>
+    <div id="A48">48</div>
+    <div id="A49">49</div>
+    <div id="A50">50</div>
+    <div id="A51">51</div>
+    <div id="A52">52</div>
+    <div id="A53">53</div>
+    <div id="A54">54</div>
+    <div id="A55">55</div>
+    <div id="A56">56</div>
+    <div id="A57">57</div>
+    <div id="A58">58</div>
+    <div id="A59">59</div>
+    <div id="A60">60</div>
+    <div id="A61">61</div>
+    <div id="A62">62</div>
+    <div id="A63">63</div>
+    <div id="A64">64</div>
+    <div id="A65">65</div>
+    <div id="A66">66</div>
+    <div id="A67">67</div>
+    <div id="A68">68</div>
+    <div id="A69">69</div>
+    <div id="A70">70</div>
+    <div id="A71">71</div>
+    <div id="A72">72</div>
+    <div id="A73">73</div>
+    <div id="A74">74</div>
+    <div id="A75">75</div>
+    <div id="A76">76</div>
+    <div id="A77">77</div>
+    <div id="A78">78</div>
 
     
     <!-- Angular magic -->
@@ -69,14 +147,16 @@
       
       $http.get('/api/posts')
       .success(function (posts) {
-        //$scope.posts = posts
         for(var i = 0; i < posts.length; i++){
-          if(posts[i].body == "00IN"){
-            document.getElementById("A00").style.background = 'blue'; 
-
-          };
+          if(posts[i].stationStatus == "OUT"){
+            document.getElementById("A" + posts[i].stationNumber).style.background = 'blue';
+          }else{
+            document.getElementByID("A" + posts[i].stationNumber).style.background = 'red';
         }  
-        $scope.posts = posts[0] 
+        
+
+
+        $scope.posts = posts//[0] 
         
       })
 
