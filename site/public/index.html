@@ -12,14 +12,13 @@
     </div>
   </div>
   <div class="block">
-    <h1>Main Body</h1>
     <ul>
       <li>
         <ul class="messages"></ul>
       </li>
     </ul>
     
-
+<div class="row1">
     <div id="A00">00</div>
     <div id="A01">01</div>
     <div id="A02">02</div>
@@ -28,6 +27,8 @@
     <div id="A05">05</div>
     <div id="A06">06</div>
     <div id="A07">07</div>
+</div>
+<div class="row2"> 
     <div id="A08">08</div>
     <div id="A09">09</div>
     <div id="A10">10</div>
@@ -36,6 +37,8 @@
     <div id="A13">13</div>
     <div id="A14">14</div>
     <div id="A15">15</div>
+</div>
+<div class="row3"> 
     <div id="A16">16</div>
     <div id="A17">17</div>
     <div id="A18">18</div>
@@ -44,6 +47,8 @@
     <div id="A21">21</div>
     <div id="A22">22</div>
     <div id="A23">23</div>
+</div>
+<div class="row4"> 
     <div id="A24">24</div>
     <div id="A25">25</div>
     <div id="A26">26</div>
@@ -52,6 +57,8 @@
     <div id="A29">29</div>
     <div id="A30">30</div>
     <div id="A31">31</div>
+</div>
+<div class="row5"> 
     <div id="A32">32</div>
     <div id="A33">33</div>
     <div id="A34">34</div>
@@ -60,6 +67,8 @@
     <div id="A37">37</div>
     <div id="A38">38</div>
     <div id="A39">39</div>
+</div>
+<div class="row6"> 
     <div id="A40">40</div>
     <div id="A41">41</div>
     <div id="A42">42</div>
@@ -68,6 +77,8 @@
     <div id="A45">45</div>
     <div id="A46">46</div>
     <div id="A47">47</div>
+</div>
+<div class="row7"> 
     <div id="A48">48</div>
     <div id="A49">49</div>
     <div id="A50">50</div>
@@ -76,6 +87,8 @@
     <div id="A53">53</div>
     <div id="A54">54</div>
     <div id="A55">55</div>
+</div>
+<div class="row8"> 
     <div id="A56">56</div>
     <div id="A57">57</div>
     <div id="A58">58</div>
@@ -84,6 +97,8 @@
     <div id="A61">61</div>
     <div id="A62">62</div>
     <div id="A63">63</div>
+</div>
+<div class="row9"> 
     <div id="A64">64</div>
     <div id="A65">65</div>
     <div id="A66">66</div>
@@ -92,6 +107,8 @@
     <div id="A69">69</div>
     <div id="A70">70</div>
     <div id="A71">71</div>
+</div>
+<div class="row10"> 
     <div id="A72">72</div>
     <div id="A73">73</div>
     <div id="A74">74</div>
@@ -99,10 +116,13 @@
     <div id="A76">76</div>
     <div id="A77">77</div>
     <div id="A78">78</div>
+</div>
 
     
     <!-- Angular magic -->
+
      <div ng-controller='PostsCtrl' class='container'>
+<!--
       <h1>API Input</h1>
       <ul class='list-group'>
         <li ng-repeat='post in posts' class='list-group-item'>
@@ -110,9 +130,11 @@
         </li>
       </ul>
       
-      <div id="A00" ng-model="A00">{{ posts }}
+      <div id="A00" ng-model="A00">{{ posts }} 
       </div>
+-->
     </div> 
+    
     <!-- End Angular magic -->
 
 
@@ -122,6 +144,7 @@
 
 
   <div class="rightpane">
+    
   </div>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.4/angular.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -135,28 +158,24 @@
   <script>
     var app = angular.module('app', [])
     app.controller('PostsCtrl', function ($scope, $http) {
-      /*$scope.addPost = function () {
-        if ($scope.postBody) {
-          $scope.posts.unshift({
-            username: 'dickeyxxx',
-            body: $scope.postBody
-          })
-        }
-      }
-      */
-      
       $http.get('/api/posts')
       .success(function (posts) {
         for(var i = 0; i < posts.length; i++){
-          if(posts[i].stationStatus == "OUT"){
-            document.getElementById("A" + posts[i].stationNumber).style.background = 'blue';
-          }else{
-            document.getElementByID("A" + posts[i].stationNumber).style.background = 'red';
+          var x = posts[i].stationStatus;
+          var y = document.getElementById("A" + posts[i].stationNumber);
+
+          if(x == "OUT"){
+            y.style.background = 'green';
+          }
+
+          if(x == "IN"){
+            y.style.background = 'grey';
+          }
         }  
         
 
-
-        $scope.posts = posts//[0] 
+        // -handy for debug-
+        //$scope.posts = posts//[0]
         
       })
 

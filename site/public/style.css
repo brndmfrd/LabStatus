@@ -42,485 +42,528 @@ ul {
   font-style: italic;
 }
 .rightpane{
-  float: left;
+  float: right;
   width: 20%;
-  height: 100%;
+  height: 100vh;
   text-align: left;
   padding-left: 5px;
-  background-color: white;
+  background-color: black;
+  margin-right:-10px;
 }
+
+.row1{
+  float: left;
+  width: 8%;
+}
+.row2{
+  float: left;
+  width: 8%;
+}
+.row3{
+  float: left;
+  width: 8%;
+}
+.row4{
+  float: left;
+  width: 8%;
+}
+.row5{
+  float: left;
+  width: 8%;
+}
+.row6{
+  float: left;
+  width: 8%;
+}
+.row7{
+  float: left;
+  width: 8%;
+}
+.row8{
+  float: left;
+  width: 8%;
+}
+.row9{
+  float: left;
+  width: 8%;
+}
+.row10{
+  float: left;
+  width: 8%;
+}
+
 
 #A00{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A01{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A02{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A03{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A04{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A05{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A06{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A07{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A08{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A09{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A10{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A11{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A12{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A13{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A14{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A15{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A16{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A17{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A18{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A19{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A20{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A21{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A22{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A23{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A24{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A25{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A26{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A27{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A28{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A29{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A30{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A31{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A32{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A33{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A34{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A35{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A36{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A37{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A38{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A39{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A40{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A41{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A42{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A43{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A44{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A45{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A46{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A47{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A48{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A49{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A50{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A51{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A52{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A53{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A54{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A55{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A56{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A57{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A58{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A59{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A60{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A61{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A62{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A63{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A64{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A65{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A66{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A67{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A68{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A69{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A70{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A71{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A72{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A73{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A74{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A75{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A76{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A77{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 
 #A78{
   background: grey;
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
 }
 

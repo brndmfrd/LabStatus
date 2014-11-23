@@ -2,14 +2,6 @@ $(function() {
   var FADE_TIME = 150; // ms
   var $messages = $('.messages'); // Messages area
   var socket = io();
-	/*
-  var div = document.getElementById( 'div_id' );
-  div.onmouseover = function() {
-    this.style.backgroundColor = 'green';
-    var h2s = this.getElementsByTagName( 'h2' );
-    h2s[0].style.backgroundColor = 'blue';
-  };
-	*/
 	
   // Log a message
   function log (message, options) {
@@ -46,24 +38,20 @@ $(function() {
   }
   
   
-
-  // Socket events
-
-  // Whenever the server emits 'login', log the login message
-  socket.on('login', function (data) {
-    connected = true;
-    // Display the welcome message
-    var message = "Welcome to Lab Status – " + data;
-    log(message, {
-      prepend: true
-    });
-  });
-  
-  
   // Whenever the server emits 'user joined', log it in the chat body
-  socket.on('user joined', function (data) {
-    //log(data + ' joined');
-	document.getElementById("A00").style.background = 'green';
+  socket.on('update', function (data) {
+    x = data.stationNumber;
+    y = data.stationStatus;
+    z = document.getElementById("A" + data.stationNumber);
+    //log(x);
+    //log(y);
+
+    if(y == 'IN'){
+        z.style.background = 'grey';
+    }
+    if(y == 'OUT'){
+        z.style.background = 'green';
+    }
   });
 
 
