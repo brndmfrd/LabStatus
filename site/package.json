@@ -2,7 +2,7 @@
   "name": "socialapp",
   "dependencies": {
     "body-parser": "~1.9.2",
-    "ejs": "~1.0.0",
+    "ejs": "~2.5.5",
     "express": "~4.10.1",
     "gulp": "~3.8.9",
     "gulp-concat": "~2.4.1",
